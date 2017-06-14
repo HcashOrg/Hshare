@@ -1,0 +1,9 @@
+Building HShare
+
+See doc/readme-qt.rst for instructions on building HShare QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of HShare.
+
+See doc/build-*.txt for instructions on building hshared,
+the intended-for-services, no-graphical-interface, reference
+implementation of HShare.

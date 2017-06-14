@@ -1,0 +1,2 @@
+debian/bin/hshared usr/bin
+src/hshared usr/lib/hshare
