@@ -1,2 +1,4 @@
 *
 !.gitignore
+!./x13hash/*.h
+!./x13hash/*.c

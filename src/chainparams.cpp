@@ -112,7 +112,7 @@ public:
         assert(hashGenesisBlock == uint256("0x0002c75e4179fd8dc22391536af7e647bdd88b83d9ed57fcf09e5ae3d06cae78"));
         assert(genesis.hashMerkleRoot == uint256("0xede8b633f962178aa01949f51bf8e83ebb954dd89325af23ee9ff9453d4bce2e"));
         
-        vSeeds.push_back(CDNSSeedData("dns1.dw.cash", "hshare-dns1.dw.cash"));vSeeds.push_back(CDNSSeedData("dns2.dw.cash", "hshare-dns2.dw.cash"));
+        vSeeds.push_back(CDNSSeedData("dns1.h.cash", "hshare-dns1.h.cash"));vSeeds.push_back(CDNSSeedData("dns2.h.cash", "hshare-dns2.h.cash"));
 
         //vSeeds.push_back(CDNSSeedData("hshareplatform.com", "seed.hshareplatform.com"));
         //vSeeds.push_back(CDNSSeedData("cloudhshare.com", "seed.cloudhshare.com"));
@@ -125,7 +125,7 @@ public:
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
-        nLastPOWBlock =  100;
+        nLastPOWBlock =  1000;
     }
 
     virtual const CBlock& GenesisBlock() const { return genesis; }

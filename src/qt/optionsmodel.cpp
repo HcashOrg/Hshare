@@ -46,7 +46,7 @@ void OptionsModel::Init()
     nTransactionFee = settings.value("nTransactionFee").toLongLong();
     nReserveBalance = settings.value("nReserveBalance").toLongLong();
     language = settings.value("language", "").toString();
-    fUseBlackTheme = settings.value("fUseBlackTheme", true).toBool();
+    fUseBlackTheme = settings.value("fUseBlackTheme", false).toBool();
 
     // These are shared with core Bitcoin; we want
     // command-line options to override the GUI settings:

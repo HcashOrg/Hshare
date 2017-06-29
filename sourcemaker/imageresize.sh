@@ -43,5 +43,6 @@ convert source.png -define icon:auto-resize=256,128,64,32,16 $tcoin/coin.ico
 iconutil -c icns $iconset
 cp $iconset/icon_96x96.png $target/images/header.png
 cp splash.png $target/images/splash3.png
+cp -r source.icns $tcoin/coin.icns
 rm -rf $iconset
 rm -rf source.icns
