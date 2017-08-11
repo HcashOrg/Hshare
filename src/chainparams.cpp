@@ -112,7 +112,26 @@ public:
         assert(hashGenesisBlock == uint256("0x0002c75e4179fd8dc22391536af7e647bdd88b83d9ed57fcf09e5ae3d06cae78"));
         assert(genesis.hashMerkleRoot == uint256("0xede8b633f962178aa01949f51bf8e83ebb954dd89325af23ee9ff9453d4bce2e"));
         
-        vSeeds.push_back(CDNSSeedData("dns1.h.cash", "hshare-dns1.h.cash"));vSeeds.push_back(CDNSSeedData("dns2.h.cash", "hshare-dns2.h.cash"));
+        vSeeds.push_back(CDNSSeedData("dns1.h.cash", "hshare-dns1.h.cash"));
+        vSeeds.push_back(CDNSSeedData("dns2.h.cash", "hshare-dns2.h.cash"));
+        vSeeds.push_back(CDNSSeedData("dns3.h.cash", "hshare-dns3.h.cash"));
+        vSeeds.push_back(CDNSSeedData("dns4.h.cash", "hshare-dns4.h.cash"));
+        vSeeds.push_back(CDNSSeedData("dns5.h.cash", "hshare-dns5.h.cash"));
+        vSeeds.push_back(CDNSSeedData("dns6.h.cash", "hshare-dns6.h.cash"));
+        vSeeds.push_back(CDNSSeedData("dns7.h.cash", "hshare-dns7.h.cash"));
+        vSeeds.push_back(CDNSSeedData("dns8.h.cash", "hshare-dns8.h.cash"));
+        vSeeds.push_back(CDNSSeedData("dns9.h.cash", "hshare-dns9.h.cash"));
+        vSeeds.push_back(CDNSSeedData("dns10.h.cash", "hshare-dns10.h.cash"));
+        vSeeds.push_back(CDNSSeedData("dns11.h.cash", "hshare-dns11.h.cash"));
+        vSeeds.push_back(CDNSSeedData("dns12.h.cash", "hshare-dns12.h.cash"));
+        vSeeds.push_back(CDNSSeedData("dns13.h.cash", "hshare-dns13.h.cash"));
+        vSeeds.push_back(CDNSSeedData("dns14.h.cash", "hshare-dns14.h.cash"));
+        vSeeds.push_back(CDNSSeedData("dns15.h.cash", "hshare-dns15.h.cash"));
+        vSeeds.push_back(CDNSSeedData("dns16.h.cash", "hshare-dns16.h.cash"));
+        vSeeds.push_back(CDNSSeedData("dns17.h.cash", "hshare-dns17.h.cash"));
+        vSeeds.push_back(CDNSSeedData("dns18.h.cash", "hshare-dns18.h.cash"));
+        vSeeds.push_back(CDNSSeedData("dns19.h.cash", "hshare-dns19.h.cash"));
+        vSeeds.push_back(CDNSSeedData("dns20.h.cash", "hshare-dns20.h.cash"));
 
         //vSeeds.push_back(CDNSSeedData("hshareplatform.com", "seed.hshareplatform.com"));
         //vSeeds.push_back(CDNSSeedData("cloudhshare.com", "seed.cloudhshare.com"));
