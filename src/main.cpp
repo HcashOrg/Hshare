@@ -1000,7 +1000,7 @@ static CBigNum GetProofOfStakeLimit(int nHeight)
 int64_t GetProofOfWorkReward(int64_t nFees)
 {
 	if (Params().IsVersionV1(pindexBest->nHeight)){
-		if(pindexBest->nHeight < 52560000) {return 1.6 - 0.016 * ( pindexBest->nHeight / 525600 ) + nFees;}
+		if(pindexBest->nHeight < 52560000) {return 1.6 * COIN - 0.016 * COIN * ( pindexBest->nHeight / 525600 ) + nFees;}
 		else {return nFees;}
 	}else{
 		if(pindexBest->nHeight < nStakeMinConfirmations){return GLOBAL_MONEY*COIN/nStakeMinConfirmations +nFees;}
@@ -1012,7 +1012,7 @@ int64_t GetProofOfWorkReward(int64_t nFees)
 int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, int64_t nFees)
 {
 	if (Params().IsVersionV1(pindexBest->nHeight)){
-		if(pindexBest->nHeight < 52560000) {return 1.6 - 0.016 * ( pindexBest->nHeight / 525600 ) + nFees;}
+		if(pindexBest->nHeight < 52560000) {return 1.6 * COIN - 0.016 * COIN * ( pindexBest->nHeight / 525600 ) + nFees;}
 		else {return 1 + nFees;}
 	}else{
 		return 1 + nFees;
