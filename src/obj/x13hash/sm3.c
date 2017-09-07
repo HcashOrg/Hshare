@@ -103,6 +103,7 @@ void
 sph_sm3_close(void *cc, void *dst)
 {
 	sm3_final(cc, dst);
+	memset(cc, 0, sizeof(sm3_ctx_t));
 }
 
 void sm3_final(sm3_ctx_t *ctx, unsigned char *digest)
