@@ -666,7 +666,7 @@ public:
 
     uint256 GetPoWHash() const
     {
-    	if (Params().IsVersionV1(nBestHeight)){
+    	if (nVersion > 7 ){
     		return HashX14(BEGIN(nVersion), END(nNonce));
     	}else{
     		return HashX13(BEGIN(nVersion), END(nNonce));

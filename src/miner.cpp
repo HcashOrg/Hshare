@@ -109,6 +109,11 @@ CBlock* CreateNewBlock(CReserveKey& reservekey, bool fProofOfStake, int64_t* pFe
     CBlockIndex* pindexPrev = pindexBest;
     int nHeight = pindexPrev->nHeight + 1;
 
+
+    if(Params().IsVersionV1(nHeight)){
+        pblock->nVersion = 8;
+    }
+
     // Create coinbase tx
     CTransaction txNew;
     txNew.vin.resize(1);

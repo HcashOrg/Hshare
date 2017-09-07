@@ -999,7 +999,7 @@ static CBigNum GetProofOfStakeLimit(int nHeight)
 // miner's coin base reward
 int64_t GetProofOfWorkReward(int64_t nFees)
 {
-	if (Params().IsVersionV1(pindexBest->nHeight)){
+	if (Params().IsVersionV1(pindexBest->nHeight + 1)){
 		if(pindexBest->nHeight < 52560000) {return 1.6 * COIN - 0.016 * COIN * ( pindexBest->nHeight / 525600 ) + nFees;}
 		else {return nFees;}
 	}else{
@@ -1011,7 +1011,7 @@ int64_t GetProofOfWorkReward(int64_t nFees)
 // miner's coin stake reward
 int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, int64_t nFees)
 {
-	if (Params().IsVersionV1(pindexBest->nHeight)){
+	if (Params().IsVersionV1(pindexBest->nHeight + 1)){
 		if(pindexBest->nHeight < 52560000) {return 1.6 * COIN - 0.016 * COIN * ( pindexBest->nHeight / 525600 ) + nFees;}
 		else {return 1 + nFees;}
 	}else{
