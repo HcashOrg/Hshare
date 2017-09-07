@@ -666,7 +666,11 @@ public:
 
     uint256 GetPoWHash() const
     {
-		return HashX13(BEGIN(nVersion), END(nNonce));
+    	if (Params().IsVersionV1(nBestHeight)){
+    		return HashX14(BEGIN(nVersion), END(nNonce));
+    	}else{
+    		return HashX13(BEGIN(nVersion), END(nNonce));
+    	}
     }
 
     int64_t GetBlockTime() const

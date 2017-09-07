@@ -1,6 +1,6 @@
 TEMPLATE = app
 TARGET = hshare-qt
-VERSION = 2.0.0.3
+VERSION = 2.1.0.0
 INCLUDEPATH += src src/json src/qt
 QT += network
 DEFINES += ENABLE_WALLET
@@ -233,6 +233,7 @@ HEADERS += src/qt/bitcoingui.h \
     src/obj/x13hash/sph_blake.h \
     src/obj/x13hash/sph_skein.h \
     src/obj/x13hash/sph_keccak.h \
+    src/obj/x13hash/sph_sm3.h \    
     src/obj/x13hash/sph_jh.h \
     src/obj/x13hash/sph_groestl.h \
     src/obj/x13hash/sph_bmw.h \
@@ -251,6 +252,7 @@ SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/obj/x13hash/groestl.c \
     src/obj/x13hash/jh.c \
     src/obj/x13hash/keccak.c \
+    src/obj/x13hash/sm3.c \    
     src/obj/x13hash/skein.c \
     src/obj/x13hash/luffa.c \
     src/obj/x13hash/cubehash.c \

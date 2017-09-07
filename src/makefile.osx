@@ -108,6 +108,7 @@ OBJS= \
     obj/x13hash/groestl.o\
     obj/x13hash/jh.o\
     obj/x13hash/keccak.o\
+    obj/x13hash/sm3.o\
     obj/x13hash/skein.o\
     obj/x13hash/hamsi.o\
 	obj/x13hash/fugue.o
