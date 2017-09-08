@@ -126,7 +126,7 @@ public:
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
         nLastPOWBlockV0 = 1000;
-        nHeightV1enable = 110000;
+        nHeightV1enable = 106000;
         nLastPOWBlockV1 = 52560000;
     }
 
