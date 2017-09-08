@@ -110,8 +110,8 @@ CBlock* CreateNewBlock(CReserveKey& reservekey, bool fProofOfStake, int64_t* pFe
     int nHeight = pindexPrev->nHeight + 1;
 
 
-    if(Params().IsVersionV1(nHeight)){
-        pblock->nVersion = 8;
+    if(!Params().IsVersionV1(nHeight)){
+        pblock->nVersion = 7;
     }
 
     // Create coinbase tx
