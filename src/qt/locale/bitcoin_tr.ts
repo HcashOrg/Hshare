@@ -15,10 +15,12 @@
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The HShare developers</source>
+Copyright © 2014 The Stratis developers
+Copyright © 2017 The HShare developers</source>
         <translation>Telif Hakkı © 2009-2014 Bitcoin geliştiricileri
 Telif Hakkı © 2012-2014 NovaCoin geliştiricileri
-Telif Hakkı © 2014 HShare geliştiricileri</translation>
+Telif Hakkı © 2014 Stratis geliştiricileri
+Telif Hakkı © 2017 HShare geliştiricileri</translation>
     </message>
     <message>
         <location line="+15"/>

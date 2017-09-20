@@ -1,6 +1,6 @@
 TEMPLATE = app
 TARGET = hshare-qt
-VERSION = 2.1.0.0
+VERSION = 2.1.0.1
 INCLUDEPATH += src src/json src/qt
 QT += network
 DEFINES += ENABLE_WALLET
